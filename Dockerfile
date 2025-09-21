@@ -22,9 +22,12 @@ RUN \
   && mkdir -p /root/.vnc \
   && x11vnc -storepasswd $VNC_PASSWORD /root/.vnc/passwd
 
+RUN pip install pipenv
+
 WORKDIR /opt/src
+COPY Pipfile* /opt/src/
+RUN pipenv install --deploy --system
 COPY . /opt/src/
-RUN pip install -r requirements.txt
 
 ADD docker-entrypoint /usr/bin/docker-entrypoint
 ENTRYPOINT ["/usr/bin/docker-entrypoint"]
