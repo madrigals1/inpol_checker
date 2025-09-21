@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b72af5f08cea7cd8ec41503de66fc17de7631435ca176f70bc9262e3f8e63872"
+            "sha256": "4e156d303a6317363265def2a5f33c122ee18182680ff976ce3ce094d3db274c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -368,6 +368,14 @@
             "index": "pypi",
             "version": "==1.1.0"
         },
+        "packaging": {
+            "hashes": [
+                "sha256:29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484",
+                "sha256:d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f"
+            ],
+            "index": "pypi",
+            "version": "==25.0"
+        },
         "pyasn1": {
             "hashes": [
                 "sha256:014c0e9976956a08139dc0712ae195324a75e142284d5f87f1a87ee1b068a359",
@@ -458,6 +466,14 @@
             ],
             "index": "pypi",
             "version": "==5.1.0"
+        },
+        "setuptools": {
+            "hashes": [
+                "sha256:062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922",
+                "sha256:f36b47402ecde768dbfafc46e8e4207b4360c654f1f3bb84475f0a28628fb19c"
+            ],
+            "index": "pypi",
+            "version": "==80.9.0"
         },
         "sniffio": {
             "hashes": [
