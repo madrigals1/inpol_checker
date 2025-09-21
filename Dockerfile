@@ -26,6 +26,6 @@ WORKDIR /opt/src
 COPY . /opt/src/
 RUN pip install -r requirements.txt
 
-ADD runner /usr/bin/runner
+ADD docker-entrypoint /usr/bin/docker-entrypoint
 ENTRYPOINT ["/usr/bin/docker-entrypoint"]
 CMD ["python3", "run_staged_multi_loop_wh.py"]
