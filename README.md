@@ -30,6 +30,7 @@ SLEEP_INTERVAL_JITTER= (optional) - Sleep interval jitter, default: `3m`
 ```
 
 3. Install pipenv if you haven't already:
+
 ```shell
 pip install pipenv
 ```
@@ -49,11 +50,13 @@ pipenv run start
 ## 🥥 Run in Docker
 
 1. Make the copy of .env.example
+
 ```
 cp .env .env.example
 ```
 
 2. Update values in the .env
+
 ```
 EMAIL= (required) - login at inpol
 PASSWORD= (required) - password at inpol
@@ -67,13 +70,15 @@ SLEEP_INTERVAL= (optional) - Sleep interval, default: `15m`
 SLEEP_INTERVAL_JITTER= (optional) - Sleep interval jitter, default: `3m`
 ```
 
-Then run with docker compose:
+3. Run with docker compose:
 
 ```shell
 docker compose up --remove-orphans
 ```
 
-While its running you could connect into with any VNC viewer. Connect to `localhost:5900` with password `password`.
+4. Connect to VNC viewer (optional)
+
+`localhost:5900` with password `password`.
 
 ## 🫑 TODO
 
