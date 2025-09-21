@@ -21,13 +21,17 @@ After checking, the script waits for a time interval, which may jitter randomly.
 
 ## 🌽 Native Run
 
-I recommend use [pyenv with direnv](https://www.google.com/search?q=how+to+use+pyenv+with+direnv) for manage environments.
-
 The script requires installed chromedriver (`brew install chromedriver` on mac)
 
+First, install pipenv if you haven't already:
 ```shell
-pip install -r requirements.txt
-EMAIL=... PASSWORD=... CASE_ID=... python run_staged_multi_loop_wh.py
+pip install pipenv
+```
+
+Then install the dependencies and run the script:
+```shell
+pipenv install
+EMAIL=... PASSWORD=... CASE_ID=... pipenv run python run_staged_multi_loop_wh.py
 ```
 
 ## 🥥 Run in Docker
