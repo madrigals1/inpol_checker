@@ -3,6 +3,9 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[scripts]
+start = "python run_staged_multi_loop_wh.py"
+
 [packages]
 async-generator = "==1.10"
 attrs = "==21.4.0"
