@@ -7,7 +7,9 @@ After checking, the script waits for a time interval, which may jitter randomly.
 
 ## 🌽 Native Run
 
-> The script requires installed chromedriver (`brew install chromedriver` on mac)
+> The script requires installed chromedriver:
+> - `brew install chromedriver` on Mac
+> - `sudo apt-get install chromium-chromedriver` on Ubuntu
 
 1. Make the copy of .env.example
 ```
